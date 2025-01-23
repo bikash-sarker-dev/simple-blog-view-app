@@ -6,4 +6,4 @@ const ProfilePage = () => {
   );
 };
 
-export default page;
+export default ProfilePage;
