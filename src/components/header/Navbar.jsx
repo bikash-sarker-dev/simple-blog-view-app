@@ -6,14 +6,14 @@ const Navbar = async () => {
   const user = await getUser();
 
   return (
-    <div className="bg-primary">
+    <div className="bg-primary px-3 lg:px-0">
       <div className="max-w-6xl mx-auto">
-        <nav className="flex justify-between items-center">
+        <nav className="flex flex-col sm:flex-row pt-3 sm:pt-0 justify-between items-center ">
           <div>
             <h2 className="text-3xl font-bold text-white">Blog View</h2>
           </div>
           <div>
-            <ul className="flex items-center gap-7 py-6">
+            <ul className="flex items-center gap-7 lg:py-6">
               <li>
                 <Link className="text-white text-lg" href="/">
                   Home
