@@ -20,7 +20,10 @@ const Navbar = async () => {
                 </Link>
               </li>
               <li>
-                <Link className="text-white text-lg" href="/profile">
+                <Link
+                  className="text-white text-lg"
+                  href={user ? "/profile" : "/api/auth/login"}
+                >
                   Profile
                 </Link>
               </li>
