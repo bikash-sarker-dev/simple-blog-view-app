@@ -5,7 +5,7 @@ const ProfilePage = async () => {
   let { getUser } = getKindeServerSession();
   const user = await getUser();
   if (!user) {
-    return redirect("/api/auth/login");
+    redirect("/api/auth/login");
   }
   return (
     <div className="flex justify-center items-center min-h-screen">

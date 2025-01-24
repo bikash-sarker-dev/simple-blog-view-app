@@ -2,7 +2,6 @@ import axios from "axios";
 
 const DetailsPage = async ({ params }) => {
   const { id } = params;
-  console.log(id);
 
   const res = await axios(`https://jsonplaceholder.typicode.com/posts/${id}`);
   const detailsData = await res.data;
