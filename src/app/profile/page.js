@@ -6,14 +6,15 @@ const ProfilePage = async () => {
   const user = await getUser();
   if (!user) {
     redirect("/api/auth/login");
+  } else {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <p className="bg-info text-5xl p-10 rounded-2xl">
+          Welcome to your profile.
+        </p>
+      </div>
+    );
   }
-  return (
-    <div className="flex justify-center items-center min-h-screen">
-      <p className="bg-info text-5xl p-10 rounded-2xl">
-        Welcome to your profile.
-      </p>
-    </div>
-  );
 };
 
 export default ProfilePage;
